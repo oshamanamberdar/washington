@@ -1,1 +1,149 @@
-<p>home works!</p>
+<div class="d-flex justify-content-center">
+  <img src="assets/images/images/bg.banner.jpg" alt="banner">
+</div>
+<div class="card">
+  <div class="card-body">
+    <br>
+    <div class="d-flex justify-content-xl-end">
+      <button (mouseenter)="openLoginCard(login)" class="top-button"><i class="bi bi-key"></i>&nbsp;Login</button>
+      <button (mouseenter)="openCreateAccountCard(createAccount)" class="top-button"><i class="bi bi-lock"></i>&nbsp;Create Account</button>
+      <button (mouseenter)="openAboutThisSite(aboutThisSite)" class="top-button "><i class="bi bi-question-lg"></i>&nbsp;About This Site</button>
+    </div>
+
+    <br>
+
+
+    <div class="menu-background">
+      <span>English</span> |
+      <span (click)="translateToSpanish()">Español</span>
+    </div>
+    <br>
+
+
+
+    <div class="align-content-center">
+      <h2 style="color:#c4801d">Welcome</h2>
+      <hr>
+      <p>
+        Washington Connection offers a fast and
+        easy way for families and individuals to
+        apply for a variety of services such as
+        Food, Cash, <br>Child Care, Long-Term Care,
+        and Medicare Savings Programs. Individuals
+        that are age 65 or older, blind or disabled
+        may also apply for<br> medical assistance. Click
+        “See If I Qualify” to get started. <a href="https://www.youtube.com/watch?v=05iVjo4clLk">Watch Video</a>
+      </p>
+
+      <p>
+        Washington Healthplanfinder offers healthcare coverage for children, parents/caretakers with children, pregnant women, or adults age<br> 18 to 64 years old. For information regarding available services or to apply for benefits,
+        visit <a href="www.wahealthplanfinder.org.">www.wahealthplanfinder.org.</a>
+      </p>
+
+
+      <div class="row">
+        <div class="col-md-4">
+          <button class="d-flex justify-content-start btn button-2">See If I Qualify</button>
+        </div>
+
+        <div class="col-md-4">
+          <button class="d-flex justify-content-center btn button-2">Apply Now</button>
+        </div>
+        <div class="col-md-4">
+          <button class=" d-flex justify-content-end btn button-2">Find Services</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <div class="row">
+      <div class="col-md-5">
+
+        <ul>
+          <li>I would like to ..</li>
+          <li (mouseenter)="openAboutThisSite(aboutThisSite)">See If I Qualify</li>
+          <li>Apply Now</li>
+        </ul>
+<!--          <option > </option>-->
+<!--          <option (mouseenter)="openAboutThisSite(aboutThisSite)"></option>-->
+<!--          <option></option>-->
+<!--          <option>Renew my benefits</option>-->
+<!--          <option>Report a change</option>-->
+<!--          <option>Complete my mid-certification review</option>-->
+<!--          <option>Find Services</option>-->
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!--Template For Login-->
+<!--https://www.washingtonconnection.org/home/home.go-->
+<ng-template #login>
+  <div class="modal-header">
+    <h1 class="modal-title" id="Login">Login</h1>
+  </div>
+  <div class="modal-body">
+    <p>If you have already registered your account, click here to login to your account.</p>
+    <button class="btn button-2">Access Your Account</button>
+    <hr>
+    <p>If you are a Community Partner, click here to access your account.</p>
+    <button class="btn button-2">Access Your Partner Account</button>
+    <hr>
+    <p>Use Your Temporary Access Code (Your Temporary Access Code works for 90 days from the day it was assigned to you.)</p>
+    <button class="btn button-2">Access With Temporary Code</button>
+  </div>
+</ng-template>
+
+
+<!--template for Create Account-->
+
+<ng-template #createAccount>
+  <div class="modal-header">
+    <h1 class="modal-title" id="Create Account">Create Account</h1>
+  </div>
+  <div class="modal-body">
+    <p>If you do not already have an account, click here to create new account.</p>
+    <button class="btn button-2">Create New Account</button>
+    <hr>
+    <p>If you have already created an account, click here to activate your account.</p>
+    <button class="btn button-2">Activate Your Account</button>
+  </div>
+</ng-template>
+
+
+<!--Template for About this Site-->
+
+<ng-template #aboutThisSite>
+  <div class="modal-header">
+    <h1 class="modal-title" id="About This Site">About This Site</h1>
+  </div>
+
+  <div class="modal-body">
+    <p>This site is designed to help you navigate by using a series of buttons and web links. Click here to learn more.</p>
+    <button class="btn button-2">Site Help</button>
+    <hr>
+    <p>If you are a customer and would like to take a survey click here.</p>
+    <button class="btn button-2">Customer Survey</button>
+    <hr>
+    <p>If you are a community partner and would like to take a survey click here</p>
+    <button class="btn button-2">Community Partner Survey</button>
+
+    <p>Click here to open video tutorials on how to use this site.</p>
+    <p><b>* This tutorial requires a flash player.</b></p>
+    <button class="btn button-2">Online Tutorials</button>
+  </div>
+</ng-template>
+
